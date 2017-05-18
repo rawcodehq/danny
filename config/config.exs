@@ -7,6 +7,7 @@ use Mix.Config
 
 # General application configuration
 config :danny,
+  data_dir: "/home/minhajuddin/r/danny/data",
   ecto_repos: [Danny.Repo]
 
 # Configures the endpoint

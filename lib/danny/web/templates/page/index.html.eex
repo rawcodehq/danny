@@ -1,3 +1,8 @@
 <h1>Danny</h1>
 
-<p class="lead">Danny is your own simple file transfer app</p>
+<p class="lead">Simple file transfer</p>
+
+<%= form_for @conn, "/files/", [as: :file, multipart: true], fn f -> %>
+  <%= file_input f, :upload %>
+  <%= submit "Send" %>
+<% end %>
